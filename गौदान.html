@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Page - gowdan.com</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('C:/Users/hp/Downloads/greenfield.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #1e3b1d;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 28px;
+      font-weight: bold;
+      color: #0b8f3a;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .qr-container {
+      position: relative;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .qr-container img.qr-code {
+      width: 320px;  /* big QR code */
+      z-index: 2;
+      position: relative;
+      border-radius: 10px;
+    }
+
+    .qr-container img.watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 180px;
+      opacity: 0.15;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 15px;
+      font-size: 16px;
+      color: #0b5c29;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer b {
+      color: #0b8f3a;
+    }
+  </style>
+</head>
+<body>
+  <header>गौदान.com — स्कैन करने के लिए QR</header>
+
+  <main>
+    <div class="qr-container">
+      <img src="C:\Users\hp\Desktop\cows\cow2.jpg" alt="cow watermark" class="watermark">
+      <img src="C:\Users\hp\Pictures\qrcode.jpg" alt="QR code" class="qr-code">
+    </div>
+  </main>
+
+  <footer>
+        
+    • संदेश:
+इसे अधिक से अधिक लोगों तक साझा करें 🙏 और अपनी श्रद्धा अनुसार मात्र ₹1 से भी गौसेवा के लिए दान करें — आपका छोटा योगदान भी बड़ा बदलाव ला सकता है।
+ 
+  </footer>
+</body>
+</html>
